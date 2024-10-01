@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Style for scrollbar track */
+::-webkit-scrollbar-track {
+  
+  border-radius: 10px;
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  /* background-color: #1f2937; */
+}
+
+/* Style for scrollbar itself */
+::-webkit-scrollbar {
+  width: 12px;
+  /* background-color: #1f2937; */
+}
+
+/* Style for scrollbar thumb (the part that you drag) */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  /* background-color: #555; */
+}
+
+.app-topbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  /* background: linear-gradient(180deg, #555 0%, #333 100%); */
+  border-radius: 0px;
+
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(
+    7.5px
+  ); /* Note the vendor prefix needs the hyphen as well */
+  /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18); */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 4;
+}
+
+/* changing the default prime react cards padding  */
+/* .p-card .p-card-body {
+  padding: 0.5rem;
+} */
+
+.p-card .p-card-content {
+  padding: 0 0;
+}
+
+.p-card .p-card-body,
+.p-card .p-card-body {
+  padding: 0;
+  border-radius: 0;
+}
+@media (max-width: 600px) {
+  .p-card .p-card-body,
+  .p-card .p-card-body {
+    padding: 0.5rem;
+    border-radius: 0;
+  }
+}
+
+.p-card {
+  border-radius: 0;
+}
+
+.p-tabview .p-tabview-panels{
+  padding-left:0px;
+  padding-right:0px
+}
+
+.p-panel .p-panel-content {
+  padding-left:0px;
+  padding-right:0px
+}
+
+.productDetailSection {
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 1200px;
+  border-bottom: 1px solid #ddd;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Ensures space around items in the column */
+}
+
+@media (min-width: 768px) {
+  .productDetailSection {
+    flex-direction: row; /* Changes the flex direction to row on wider screens */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: space-around; /* Maintains space around items */
+  }
+}
+
+.p-menubar {
+  background: var(--surface-a);
+}
+
+.p-menuitem-active {
+  color: red;
+}
+
+.p-menuitem-text-active {
+  background-color: blue;
+}
+.active-menuitem {
+  background-color: blue; /* or any other styling */
+}
+
+/* Menu bar Houver */
+
+.p-menuitem-link:hover {
+  backdropfilter: blur(7.5px);
+  webkitbackdropfilter: blur(7.5px);
+  boxshadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+  borderradius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.87);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.p-menuitem-link:active {
+  backgroundcolor: rgba(255, 255, 255, 0.1);
+  backdropfilter: blur(7.5px);
+  webkitbackdropfilter: blur(7.5px);
+  boxshadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+  borderradius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.my-p-menuitem-active {
+  backdropfilter: blur(7.5px);
+  webkitbackdropfilter: blur(7.5px);
+  boxshadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+  borderradius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.87);
+  /* background: rgba(255, 255, 255, 0.03); */
+  background: rgb(243, 244, 246);
+}
+
+.my-p-menuitem-active-dark {
+  backdropfilter: blur(7.5px);
+  webkitbackdropfilter: blur(7.5px);
+  boxshadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+  borderradius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.87);
+  background: rgba(255, 255, 255, 0.03);
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "status": "successful",
+    "customer": {
+      "name": "hannah ",
+      "email": "hannah@gmail.com"
+    },
+    "transaction_id": 5059285,
+    "tx_ref": 1714636941886,
+    "flw_ref": "FLW-MOCK-a22b1cc851f8b5ee0d23d312429af298",
+    "currency": "UGX",
+    "amount": 1432.95,
+    "charged_amount": 1433,
+    "charge_response_code": "00",
+    "charge_response_message": "Please enter the OTP sent to your mobile number 080****** and email te**@rave**.com",
+    "created_at": "2024-05-02T08:04:30.000Z"
+  },
+
+  {
+    "status": "successful",
+    "customer": {
+      "name": "bloody kheeng",
+      "email": "bloodykheeng@gmail.com",
+      "phone_number": "0774542872"
+    },
+    "transaction_id": 5059450,
+    "tx_ref": 1714641898505,
+    "flw_ref": "flwm3s4m0c1714641957145",
+    "currency": "UGX",
+    "amount": 1432.95,
+    "charged_amount": 1432.95,
+    "charge_response_code": "00",
+    "charge_response_message": "Transaction in progress",
+    "created_at": "2024-05-02T09:25:56.000Z"
+  }
+]
